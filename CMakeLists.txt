@@ -19,7 +19,10 @@ else()
 endif()
 # 添加子模块
 add_subdirectory(src/MyLibrary)
+add_subdirectory(src/DesignPattern)
 add_subdirectory(src/app)
+
 
 # 安装公共头文件
 install(DIRECTORY include/MyLibrary DESTINATION include)
+install(DIRECTORY include/DesignPattern DESTINATION include)

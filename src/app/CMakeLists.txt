@@ -2,7 +2,10 @@
 add_executable(app main.cpp)
 
 # 链接动态库
-target_link_libraries(app PRIVATE MyLibrary)
+target_link_libraries(app PRIVATE 
+    MyLibrary
+    Pattern
+)
 
 # 添加头文件路径
 target_include_directories(app PRIVATE ${CMAKE_SOURCE_DIR}/include)
